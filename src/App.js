@@ -61,13 +61,13 @@ class App extends React.Component {
             currentQuery: query,
           },
           this.addToHistory(query)
-        ); 
+        );
       })
       .catch(error =>
         this.setState({
           hasError: true,
         })
-      ); 
+      );
   };
 
   addToHistory(newQuery) {

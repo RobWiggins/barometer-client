@@ -27,7 +27,7 @@ export default class EmotionChart extends React.Component {
   render() {
     // get average emotion across all target keywords
     const averageEmotionsObj = this.calculateAvgEmotion(
-      this.props.watsonEmotionResults.emotion.targets
+      this.props.watsonEmotionResults.result.emotion.targets
     )
 
     // format chart.js react data
