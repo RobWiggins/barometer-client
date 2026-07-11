@@ -1,40 +1,42 @@
 const sampleState = {
   watsonEmotionResults: {
-    usage: {
-      text_units: 1,
-      text_characters: 5563,
-      features: 2,
-    },
-    sentiment: {
-      document: {
-        score: -0.389527,
-        label: 'negative',
+    result: {
+      usage: {
+        text_units: 1,
+        text_characters: 5563,
+        features: 2,
       },
-    },
-    language: 'en',
-    emotion: {
-      targets: [
-        {
-          text: 'trump',
+      sentiment: {
+        document: {
+          score: -0.389527,
+          label: 'negative',
+        },
+      },
+      language: 'en',
+      emotion: {
+        targets: [
+          {
+            text: 'trump',
+            emotion: {
+              sadness: 0.527292,
+              joy: 0.117104,
+              fear: 0.107436,
+              disgust: 0.172389,
+              anger: 0.160808,
+            },
+          },
+        ],
+        document: {
           emotion: {
-            sadness: 0.527292,
-            joy: 0.117104,
-            fear: 0.107436,
-            disgust: 0.172389,
-            anger: 0.160808,
+            sadness: 0.22184,
+            joy: 0.613288,
+            fear: 0.108367,
+            disgust: 0.532003,
+            anger: 0.565455,
           },
         },
-      ],
-      document: {
-        emotion: {
-          sadness: 0.22184,
-          joy: 0.613288,
-          fear: 0.108367,
-          disgust: 0.532003,
-          anger: 0.565455,
-        },
       },
-    },
+    },  
   },
   tweets: [
     "President Trump's proposed executive action for a #2020Census citizenship question will be illegal, unconstitutional, and un-American. Everyone in the country should be pushing back against it. Walk with me briefly as I unpack this... https://t.co/PLaambiNeD",
