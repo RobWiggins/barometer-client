@@ -11,14 +11,15 @@ export default class SentimentChart extends React.Component {
     if (isDataPresent) {
       barColor =
         this.props.watsonEmotionResults.result.sentiment.document.label === 'negative'
-          ? 'rgba(255, 99, 132, 1)'
-          : 'rgba(75, 192, 192, 1)';
+          ? 'rgba(232, 74, 106, 0.9)'
+          : 'rgba(25, 169, 116, 0.9)';
       borderColor =
       (this.props.watsonEmotionResults.result.sentiment.document.label ===
       'negative'
-        ? 'rgba(255, 99, 132, 1)'
-        : 'rgba(75, 192, 192, 1)');
+        ? 'rgba(232, 74, 106, 1)'
+        : 'rgba(25, 169, 116, 1)');
       data = {
+        labels: ['Overall sentiment'],
         datasets: [
           {
             data: [
@@ -26,7 +27,7 @@ export default class SentimentChart extends React.Component {
             ],
             backgroundColor: [barColor],
             borderColor: [borderColor],
-            borderWidth: 1,
+            borderWidth: 0,
           },
         ],
       };
@@ -34,11 +35,12 @@ export default class SentimentChart extends React.Component {
       options = {
         title: {
           display: true,
-          fontColor: '#DCDCDC',
+          fontColor: '#172033',
           text: (this.props.watsonEmotionResults.result.sentiment.document.label === 'positive' ? 'Positive sentiment' : 'Negative sentiment'),
-          fontSize: 40,
-          fontFamily: "'Cormorant', 'Lora', 'Montserrat', 'Roboto', 'serif'",
-          fontStyle: 500,        
+          fontSize: 24,
+          fontFamily:
+            "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          fontStyle: 800,        
         },
         legend: {
           display: false,
@@ -53,12 +55,12 @@ export default class SentimentChart extends React.Component {
             {
               ticks: {
                 fontSize: 14,
-                fontColor: '#DCDCDC',
+                fontColor: '#65728a',
                 // beginAtZero: true,
               },
               gridLines: {
-                zeroLineColor: '#DCDCDC',
-                color: '#DCDCDC',
+                zeroLineColor: 'rgba(101, 114, 138, 0.28)',
+                color: 'rgba(101, 114, 138, 0.16)',
               },
             },
           ],
@@ -66,10 +68,10 @@ export default class SentimentChart extends React.Component {
             {
               ticks: {
                 fontSize: 14,
-                fontColor: '#DCDCDC',
+                fontColor: '#65728a',
               },
               gridLines: {
-                color: '#DCDCDC',
+                color: 'rgba(101, 114, 138, 0.16)',
               },
             },
           ],

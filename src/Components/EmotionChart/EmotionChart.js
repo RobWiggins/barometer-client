@@ -41,20 +41,20 @@ export default class EmotionChart extends React.Component {
             label: 'Emotion density',
             data: Object.values(averageEmotionsObj),
             backgroundColor: [
-              'rgba(54, 162, 235, 1)', // sad
-              'rgba(255, 206, 86, 1)', // joy
-              'rgba(153, 102, 255, 1)', // fear
-              'rgba(75, 192, 192, 1)', // disgust
-              'rgba(255, 99, 132, 1)', // anger
+              'rgba(53, 99, 233, 0.9)', // sad
+              'rgba(245, 165, 36, 0.9)', // joy
+              'rgba(124, 92, 255, 0.9)', // fear
+              'rgba(25, 169, 116, 0.9)', // disgust
+              'rgba(232, 74, 106, 0.9)', // anger
             ],
             borderColor: [
-              'rgba(54, 162, 235, 1)', // sad
-              'rgba(255, 206, 86, 1)', // joy
-              'rgba(153, 102, 255, 1)', // fear
-              'rgba(75, 192, 192, 1)', // disgust
-              'rgba(255, 99, 132, 1)', // anger
+              'rgba(53, 99, 233, 1)', // sad
+              'rgba(245, 165, 36, 1)', // joy
+              'rgba(124, 92, 255, 1)', // fear
+              'rgba(25, 169, 116, 1)', // disgust
+              'rgba(232, 74, 106, 1)', // anger
             ],
-            borderWidth: 1,
+            borderWidth: 0,
           },
         ],
       }
@@ -64,11 +64,12 @@ export default class EmotionChart extends React.Component {
       title: {
         display: true,
         text: 'Tweet emotions',
-        fontSize: 40,
-        fontColor: '#DCDCDC',
-        padding: 20,
-        fontFamily: "'Cormorant', 'Lora', 'Montserrat', 'Roboto', 'serif'",
-        fontStyle: 500,
+        fontSize: 24,
+        fontColor: '#172033',
+        padding: 18,
+        fontFamily:
+          "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        fontStyle: 800,
       },
       legend: {
         display: false,
@@ -78,7 +79,7 @@ export default class EmotionChart extends React.Component {
           {
             ticks: {
               fontSize: 13,
-              fontColor: '#DCDCDC',
+              fontColor: '#65728a',
             },
             
           },
@@ -87,10 +88,11 @@ export default class EmotionChart extends React.Component {
           {
             ticks: {
               fontSize: 13,
-              fontColor: '#DCDCDC',
+              fontColor: '#65728a',
             },
             gridLines: {
-              color: '#DCDCDC',
+              color: 'rgba(101, 114, 138, 0.16)',
+              zeroLineColor: 'rgba(101, 114, 138, 0.28)',
             },
           },
         ],

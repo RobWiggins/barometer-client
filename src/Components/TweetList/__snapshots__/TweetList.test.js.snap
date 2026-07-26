@@ -14,51 +14,360 @@ exports[`testing TweetList Component renders a list of tweets with tweets prop 1
     id="tweets"
   >
     <li
+      className="tweet-card"
       key="0"
     >
-      President Trump's proposed executive action for a #2020Census citizenship question will be illegal, unconstitutional, and un-American. Everyone in the country should be pushing back against it. Walk with me briefly as I unpack this... https://t.co/PLaambiNeD
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            P
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              1
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              1
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          President Trump's proposed executive action for a #2020Census citizenship question will be illegal, unconstitutional, and un-American. Everyone in the country should be pushing back against it. Walk with me briefly as I unpack this... https://t.co/PLaambiNeD
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="1"
     >
-      QUESTION FOR @washingtonpost:
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            Q
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              2
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              2
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          QUESTION FOR @washingtonpost:
 
 Trump⁠—via lawyers⁠—denies a social relationship with Epstein. So why is this info in PARAGRAPH #22:
 
 "[Per his black book], Epstein's relationship with Trump was significant...Epstein listed 14 phone numbers for Trump..." https://t.co/c4fZVcYCwL
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="2"
     >
-      This staffer said Trump grabbed her by the shoulders and forcibly kissed her at a campaign event. She is now suing Trump for "violating norms of decency."
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            T
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              3
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              3
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          This staffer said Trump grabbed her by the shoulders and forcibly kissed her at a campaign event. She is now suing Trump for "violating norms of decency."
 
 Someone else captured this video, just released tonight.
 
 The instance seems to have been greatly mischaracterized. https://t.co/qAxJjPyrnN
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="3"
     >
-      We can’t afford for the media to divide the Democratic Party. @AOC  @SpeakerPelosi please keep your differences on the DL. The media will use any disagreements to further divide and next thing you know Trump is back in office and God help us. #teamAOC #Palante #BX
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            W
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              4
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              4
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          We can’t afford for the media to divide the Democratic Party. @AOC  @SpeakerPelosi please keep your differences on the DL. The media will use any disagreements to further divide and next thing you know Trump is back in office and God help us. #teamAOC #Palante #BX
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="4"
     >
-      This staffer said Trump grabbed her by the shoulders and forcibly kissed her at a campaign event. She is now suing Trump for "violating norms of decency."
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            T
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              5
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              5
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          This staffer said Trump grabbed her by the shoulders and forcibly kissed her at a campaign event. She is now suing Trump for "violating norms of decency."
 
 Someone else captured this video, just released tonight.
 
 The instance seems to have been greatly mischaracterized. https://t.co/qAxJjPyrnN
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="5"
     >
-      Wait. Trump literally thought that Pete Buttigieg had a Twitter handle based on the sophomoric nickname Trump himself gave him? https://t.co/JNWuGPihmi
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            W
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              6
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              6
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          Wait. Trump literally thought that Pete Buttigieg had a Twitter handle based on the sophomoric nickname Trump himself gave him? https://t.co/JNWuGPihmi
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
     <li
+      className="tweet-card"
       key="6"
     >
-      *Wins 2019 World Cup, Golden Ball and Golden Boot*
+      <article
+        className="tweet-post"
+      >
+        <div
+          className="tweet-post-header"
+        >
+          <div
+            aria-hidden="true"
+            className="tweet-avatar"
+          >
+            *
+          </div>
+          <div
+            className="tweet-author"
+          >
+            <span
+              className="tweet-name"
+            >
+              Signal sample 
+              7
+            </span>
+            <span
+              className="tweet-handle"
+            >
+              @barometer_
+              7
+            </span>
+          </div>
+        </div>
+        <p
+          className="tweet-text"
+        >
+          *Wins 2019 World Cup, Golden Ball and Golden Boot*
 
 Megan Rapinoe: WE DID IT! I deserve this. 
 
@@ -69,6 +378,19 @@ No one:
 Donald Trump: I’m so great looking and smart, a true Stable Genius!
 
 GOP: Very good sir, you are wise AND handsome.
+        </p>
+        <div
+          aria-label="Tweet context"
+          className="tweet-post-footer"
+        >
+          <span>
+            Public post
+          </span>
+          <span>
+            Analyzed
+          </span>
+        </div>
+      </article>
     </li>
   </ul>
 </section>

@@ -2,72 +2,105 @@
   box-sizing: border-box;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
+#landingPane {
+  display: grid;
+  gap: 22px;
+  width: min(100%, 940px);
+  margin: 0 auto 56px;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-#app-title {
-  padding: 20px 15px;
-  padding-bottom: 5px;
-  background-color: rgba(29, 161, 242, .05);
+.landingRow,
+#callAction {
+  border: 1px solid rgba(101, 114, 138, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: var(--shadow-soft);
 }
 
 .landingRow {
-  color: #eee0c3;
-  padding-bottom: 15px;
-  line-height: 1.5em;
+  padding: clamp(24px, 5vw, 44px);
+  line-height: 1.65;
 }
 
 #callAction {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  padding: 24px;
 }
 
-#hideLanding {
-  margin-top: 5px;
-  width: 270px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 10px;
-  background-color: gainsboro;
-  border: 1px solid gray;
-  color: black;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  transition: 0.3s;
-  cursor: pointer;
-  border-radius: 20px;
+.feature-summary {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  padding-top: 0;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
-#hideLanding:hover {
-  color: white;
-  background-color: rgba(29, 161, 242, .6);
-
+#callAction .feature-summary {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
-p {
+#landingPane p {
+  max-width: 680px;
   margin: 0 auto;
-  max-width: 650px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-p + p {
+#landingPane p + p {
   margin-top: 15px;
+}
+
+#search-home-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  border: 1px solid rgba(101, 114, 138, 0.18);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 #thesis {
-  padding-top: 5px; 
+  max-width: 600px;
+  padding-top: 6px;
+  color: #3c4a63;
   font-style: italic;
+  font-weight: 650;
+}
+
+#hideLanding {
+  justify-self: center;
+  min-height: 52px;
+  width: min(100%, 280px);
+  margin: 0;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  box-shadow: 0 16px 30px rgba(53, 99, 233, 0.28);
+  font-size: 1rem;
+  font-weight: 850;
+  text-align: center;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+#hideLanding:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 36px rgba(53, 99, 233, 0.34);
+}
+
+@media only screen and (min-width: 768px) {
+  #landingPane {
+    gap: 26px;
+  }
+
+  #callAction {
+    padding: 30px;
+  }
 }
