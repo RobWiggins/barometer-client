@@ -13,13 +13,15 @@ export default class SearchHistory extends React.Component {
     ) {
       // iterate from back of history array to attain most recent
       let query = this.props.queries[(this.props.queries.length - count - 1)].query;
+      let isActive = query === this.props.activeHistoryQuery;
       history.push(
           <button
             key={count}
-            className="pastSearch"
+            className={isActive ? 'pastSearch activePastSearch' : 'pastSearch'}
+            aria-pressed={isActive}
             onClick={e => {
               e.preventDefault();
-              this.props.handleSubmitQuery(e.target.innerHTML);
+              this.props.handleSubmitQuery(query, true);
             }}
           >
             {query}

@@ -11,6 +11,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
     id="buttonsHistory"
   >
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="0"
       onClick={[Function]}
@@ -18,6 +19,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
       earthquake
     </button>
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="1"
       onClick={[Function]}
@@ -25,6 +27,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
       trees
     </button>
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="2"
       onClick={[Function]}
@@ -32,6 +35,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
       earthquake
     </button>
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="3"
       onClick={[Function]}
@@ -39,6 +43,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
       bumblebee
     </button>
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="4"
       onClick={[Function]}
@@ -46,6 +51,7 @@ exports[`testing SearchHistory Component renders a SearchHistory list with queri
       butterflies
     </button>
     <button
+      aria-pressed={false}
       className="pastSearch"
       key="5"
       onClick={[Function]}

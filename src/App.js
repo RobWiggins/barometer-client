@@ -16,6 +16,7 @@ class App extends React.Component {
     tweets: null,
     queries: null,
     currentQuery: null,
+    activeHistoryQuery: null,
     hasError: false,
     showLandingPage: true,
   };
@@ -43,9 +44,12 @@ class App extends React.Component {
       .catch(err => console.log(err.message));
   }
 
-  handleSubmitQuery = query => {
+  handleSubmitQuery = (query, isHistoryQuery = false) => {
+    if (!isHistoryQuery && this.state.activeHistoryQuery) {
+      this.setState({ activeHistoryQuery: null });
+    }
 
-    fetch(config.API_ENDPOINT + `/tweets/queries/${query}`)
+    return fetch(config.API_ENDPOINT + `/tweets/queries/${query}`)
       .then(response => {
         if (!response.ok) {
           throw new Error({ message: 'something seems to have gone wrong' });
@@ -59,6 +63,7 @@ class App extends React.Component {
             tweets: data.duplicatesFiltered,
             hasError: false,
             currentQuery: query,
+            activeHistoryQuery: isHistoryQuery ? query : null,
           },
           this.addToHistory(query)
         );
@@ -145,6 +150,7 @@ class App extends React.Component {
             {errorDisplay}
             <SearchHistory
               handleSubmitQuery={this.handleSubmitQuery}
+              activeHistoryQuery={this.state.activeHistoryQuery}
               queries={this.state.queries}
             />
             <div id="grid-holder">

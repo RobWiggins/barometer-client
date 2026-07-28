@@ -271,7 +271,8 @@ main {
     box-shadow 160ms ease;
 }
 
-.pastSearch:hover {
+.pastSearch:hover,
+.pastSearch.activePastSearch {
   color: #ffffff;
   background: var(--blue);
   box-shadow: 0 12px 24px rgba(53, 99, 233, 0.2);
